@@ -9,44 +9,214 @@
   <link href="output.css" rel="stylesheet" />
 </head>
 
-<body>
-  <div>
-    <nav class="grid grid-cols-8 md:grid-cols-6 bg-white px-6 py-4">
-      <div class="col-span-1"><img class="h-8" src="/FE-CAT-tailwind-css/img/logo.png" alt="logo">
+<body class="text-xs">
+  <nav class="grid grid-cols-10 gap-3 lg:grid-cols-6 bg-white px-6 py-4 shadow-lg sticky top-0 left-0 right-0">
+    <div class="col-span-1"><img class="h-8" src="/FE-CAT-tailwind-css/img/logo.png" alt="logo">
+    </div>
+    <div class="col-span-8 lg:col-span-3"><input type="search" id="default-search"
+        class="block w-full p-2 text-gray-900 border border-gray-300 rounded" placeholder="Search" required>
+    </div>
+    <div class="hidden lg:flex place-content-between md:col-span-2 items-center justify-end gap-x-5">
+      <div>
+        <p>Go premium</p>
       </div>
-      <div class="flex-grow-3 col-span-6 md:col-span-3"><input type="search" id="default-search"
-          class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded" placeholder="Search" required>
-      </div>
-      <div class="hidden md:flex place-content-between md:col-span-2">
-        <div>
-          <p>Go premium</p>
-        </div>
-        <div>b</div>
-        <div>c</div>
-        <div><button class="bg-red-600 rounded text-xs text-red-200 py-2 px-3">New post</button></div>
-      </div>
-      <div class="bg-amber-500 flex md:hidden">3</div>
-  </div>
+      <div>xxx</div>
+      <div>xxx</div>
+      <div><button class="bg-red-600 rounded text-red-200 py-2 px-3">New post</button></div>
+    </div>
+    <div class="bg-amber-500 flex lg:hidden">3</div>
   </nav>
 
-  <main class="bg-gray-200 p-2 h-screen p-6">
-    <div class="grid grid-cols-8 md:grid-cols-6 gap-6">
-      <div class="hidden md:flex col-span-2 xl:col-span-1 gap-y-4 flex-col justify-start">
-        <div class="flex-1 bg-white rounded overflow-hidden shadow-lg border border-gray-300">1</div>
-        <div class="flex-1 bg-white rounded overflow-hidden shadow-lg border border-gray-300">2</div>
-      </div>
-      <div class="col-span-6 col-start-2 md:col-span-4 xl:col-span-3 grid grid-rows-3 gap-y-4">
-        <div class="flex rounded overflow-hidden shadow-lg border border-gray-300">
-          <div class="flex-1 bg-white">1</div>
-          <div class="flex-1 bg-white">2</div>
-          <div class="flex-1 bg-white">3</div>
+  <main class="bg-blue-200 md:bg-red-200 lg:bg-green-300 xl:bg-gray-200 h-screen md:p-6">
+    <div class="grid grid-cols-10 xl:grid-cols-6 gap-6 h-full">
+      <div class="hidden lg:flex lg:col-span-2 xl:col-span-1 gap-y-4 flex-col justify-start text-gray-500">
+        <div class="flex flex-col gap-y-3 border-b border-gray-300 font-medium pb-8">
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Home</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Popular</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Communities</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Trending</p>
+          </div>
         </div>
-        <div class="bg-white rounded overflow-hidden shadow-lg  border border-gray-300">b</div>
-        <div class="bg-white rounded overflow-hidden shadow-lg  border border-gray-300">c</div>
+        <div class="gap-y-3 font-medium pt-5">
+          <div class="p-3"><img src="" alt="">
+            <p>MY COMMUNITIES</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Movies</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Food</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Sports</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Animals</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Science</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Dinosaurs</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Talents</p>
+          </div>
+          <div class="p-3 rounded hover:bg-gray-300"><img src="" alt="">
+            <p>Gaming</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-span-10 md:col-span-8 md:col-start-2 lg:col-span-8 lg:col-start-3 xl:col-span-3 flex flex-col gap-y-4">
+        <div class="hidden md:flex rounded overflow-hidden shadow-lg border border-gray-300 text-center">
+          <div class="flex-1 py-4 bg-white hover:border-b-2 hover:border-red-600">Recent</div>
+          <div class="flex-1 py-4 bg-white border-x border-gray-300 hover:border-b-2 hover:border-b-red-600">Most Liked
+          </div>
+          <div class="flex-1 py-4 bg-white hover:border-b-2 hover:border-red-600">Most Answers</div>
+        </div>
+        <div class="mt-6 mx-6 md:hidden">
+          <form action="">
+            <select class="border border-gray-300 rounded w-full p-2" name="dropdown" id="">
+              <option value="">Recent</option>
+              <option value="">Most Liked</option>
+              <option value="">Most Answers</option>
+            </select>
+          </form>
+        </div>
+        <div class="bg-white md:rounded overflow-hidden shadow-lg p-5 border border-gray-300">
+          <div class="flex gap-x-4 items-center ">
+            <div><img src="" alt="">xxx</div>
+            <div class="flex-1">
+              <h3 class="font-medium">Dries Vincent</h3>
+              <p>December 9 at 11:43 AM</p>
+            </div>
+            <div><img src="" alt="">xxxx</div>
+          </div>
+          <div class="py-4">
+            <h2 class="font-medium text-sm">What would you have done differently if you ran Jurassic Park?</h2>
+            <p class="py-4 text-gray-500">Jurassic Park was an incredible idea and a magnificent feat of engineering,
+              but poor
+              protocols and a
+              disregard for human safety killed what could have otherwise been one of the best businesses of our
+              generation.</p>
+            <p class="text-gray-500">Ultimately, I think that if you wanted to run the park successfully and keep
+              visitors safe, the most
+              important thing to prioritize would be...</p>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex gap-x-6">
+              <div>29</div>
+              <div>11</div>
+              <div>2.7k</div>
+            </div>
+            <div>Share</div>
+          </div>
+        </div>
+        <div class="bg-white md:rounded overflow-hidden shadow-lg p-5 border border-gray-300">
+          <div class="flex gap-x-4 items-center ">
+            <div><img src="" alt="">xxx</div>
+            <div class="flex-1">
+              <h3 class="font-medium">Lindsay Walton</h3>
+              <p>December 8 at 10:45 PM</p>
+            </div>
+            <div><img src="" alt="">xxxx</div>
+          </div>
+          <div class="py-4">
+            <h2 class="font-medium text-sm">What's it like to be a golden retriever?</h2>
+            <p class="py-4 text-gray-500">Man I am glad you asked this question. I'm a 6 year old golden retriever and
+              while I still
+              have a few years left to experience, I think I've been around long enought to tell you what it's really
+              like.</p>
+            <p class="text-gray-500">Most people think being a dog is awesome. You sleep as much as you want, all of
+              your meals are prepared
+              for you, and someone literally picks up your poop for you. And yea, you know what, those parts <i>are</i>
+              pretty awesome. But there's a dark side to being a golden retriever that they don't tell you about...</p>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex gap-x-6">
+              <div>316</div>
+              <div>41</div>
+              <div>11.7k</div>
+            </div>
+            <div>Share</div>
+          </div>
+        </div>
       </div>
       <div class="hidden xl:flex col-span-2 gap-y-4 flex-col">
-        <div class="flex-1 bg-white rounded overflow-hidden shadow-lg border border-gray-300">1</div>
-        <div class="flex-1 bg-white rounded overflow-hidden shadow-lg border border-gray-300">2</div>
+        <div class="bg-white rounded overflow-hidden shadow-lg border border-gray-300 p-5 flex flex-col gap-y-4">
+          <div>Who to follow</div>
+          <div>
+            <div class="flex gap-x-4 items-center border-b border-gray-300 pb-3 pt-2">
+              <div><img src="" alt="">xxx</div>
+              <div class="flex-1">
+                <h4 class="font-medium">Leonard Krasner</h4>
+                <p class="text-gray-400">@leonardkrasner</p>
+              </div>
+              <div><button class="bg-red-50 rounded-lg text-red-600 px-2 py-1 font-medium"><span
+                    class="text-red-400">+</span>
+                  Follow</button>
+              </div>
+            </div>
+            <div class="flex gap-x-4 items-center border-b border-gray-300 py-3">
+              <div><img src="" alt="">xxx</div>
+              <div class="flex-1">
+                <h4 class="font-medium">Floyd Miles</h4>
+                <p class="text-gray-400">@floydmiles</p>
+              </div>
+              <div><button class="bg-red-50 rounded-lg text-red-600 px-2 py-1 font-medium"><span
+                    class="text-red-400">+</span>
+                  Follow</button>
+              </div>
+            </div>
+            <div class="flex gap-x-4 items-center pt-3 pb-2">
+              <div><img src="" alt="">xxx</div>
+              <div class="flex-1">
+                <h4 class="font-medium">Emily Selman</h4>
+                <p class="text-gray-400">@emilyselman</p>
+              </div>
+              <div><button class="bg-red-50 rounded-lg text-red-600 px-2 py-1 font-medium"><span
+                    class="text-red-400">+</span>
+                  Follow</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded border border-gray-300 text-center py-2">View all</div>
+        </div>
+        <div class="bg-white rounded overflow-hidden shadow-lg border border-gray-300 p-5 flex flex-col gap-y-4">
+          <div>Trending</div>
+          <div>
+            <div class="flex gap-x-4 border-b border-gray-300 pb-3 pt-2">
+              <div><img src="" alt="">xxx</div>
+              <div class="flex-1">
+                <p>What books do you have on your bookshelf just to look smarter than you actually are?</p>
+                <p class="pt-2">291</p>
+              </div>
+            </div>
+            <div class="flex gap-x-4 border-b border-gray-300 py-3">
+              <div><img src="" alt="">xxx</div>
+              <div class="flex-1">
+                <p>Have you ever lied about your age to buy a kid's meal at a restaurant</p>
+                <p class="pt-2">164</p>
+              </div>
+            </div>
+            <div class="flex gap-x-4 pt-3 pb-2">
+              <div><img src="" alt="">xxx</div>
+              <div class="flex-1">
+                <p>Does Santa Claus pay property taxes for his workshop at the North Pole?</p>
+                <p class="pt-2">128</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>
